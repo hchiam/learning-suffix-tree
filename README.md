@@ -6,4 +6,4 @@ See the section on suffix trees in ["The Algorithm Design Manual" by Steven Skie
 
 This helped clarify using suffix trees to find longest common substring and longest palindrome: <http://www.cs.jhu.edu/~langmea/resources/lecture_notes/08_suffix_trees_v2.pdf>
 
-Suffix trees can be implemented as tries, collapsed tries, and suffix arrays.
+Suffix trees can be implemented as tries, collapsed suffix tries, or suffix arrays. Suffix array is typically faster.
