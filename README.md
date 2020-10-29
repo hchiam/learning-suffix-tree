@@ -2,7 +2,7 @@
 
 Just one of the things I'm learning. <https://github.com/hchiam/learning>
 
-Can find all places a substring occurs in a string. Can turn `O(n^2)` into `O(n)` where n = # of suffixes.
+Can find all places a substring occurs in a string. Can turn `O(n^2)` into `O(n)` where `n` = # of suffixes.
 
 See the section on suffix trees in ["The Algorithm Design Manual" by Steven Skiena](https://www.algorist.com).
 
@@ -16,18 +16,18 @@ Suffix array is typically faster.
 
 ## Trie vs Collapsed suffix trie
 
+Linear setup time and space: (`O(n)` where `n` = # of suffixes)
+
 ![Trie vs Collapsed suffix trie](collapsed.jpg)
 
-<!-- <img src="collapsed.jpg" alt="Trie vs Collapsed suffix trie" height="200"> -->
+## Longest common substring (LCS)
 
-## Longest common substring
+Add all suffixes of both strings:
 
 ![Longest common substring](LCS.jpg)
 
-<!-- <img src="LCS.jpg" alt="Longest common substring" height="200"> -->
-
 ## Longest palindrome
 
-![Longest palindrome](palindrome.jpg)
+Add all suffixes of the string, and add all suffixes of the reverse of the string: (compare this with LCS)
 
-<!-- <img src="palindrome.jpg" alt="Longest palindrome" height="200"> -->
+![Longest palindrome](palindrome.jpg)
