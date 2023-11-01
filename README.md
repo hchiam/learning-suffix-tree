@@ -14,6 +14,18 @@ Space for collapsed suffix trie can be further compressed by storing string star
 
 Suffix array is typically faster.
 
+## YouTube videos
+
+Manually constructing a suffix tree with DNA nucleotides: https://www.youtube.com/watch?v=VA9m_l6LpwI
+
+Querying string is substring and other uses of suffix tree: https://www.youtube.com/watch?v=A3p6HKfz4Cs
+- note that each letter(s) are on edges not on nodes!
+- and/so you can "fall off" "partway" along an edge while trying to match!
+- is string substring? `Ot(n)` = just going down and finding a valid path
+- count the times string is a substring? = count leaves below -> `Ot(k = count of leaves below)` + `Ot(n)` to traverse to the substring = `Ot(k + n)`
+- reporting locations/offsets? = read indices stored at leaves below -> `Ot(k + n)` again!
+- `Os(m)` where `m` = ???
+
 ## Trie vs Collapsed suffix trie
 
 Linear setup time and space: (`O(n)` where `n` = # of suffixes)
